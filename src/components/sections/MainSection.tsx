@@ -21,15 +21,17 @@ const MainSection = () => {
   return (
     <MainSectionContainer ref={containerRef} className={`wedding-container jwk-${watermarkId.slice(0, 8)}-main`}>
       {}
-      <BackgroundImage 
-        src={weddingConfig.main.image}
-        alt="웨딩 배경 이미지"
-        fill
-        priority
-        sizes="100vw"
-        quality={90}
-        style={{ objectFit: 'cover', objectPosition: 'center 10%' }}
-      />
+      <BackgroundImageWrapper>
+        <BackgroundImage
+          src={weddingConfig.main.image}
+          alt="웨딩 배경 이미지"
+          fill
+          priority
+          sizes="100vw"
+          quality={90}
+          style={{ objectFit: 'cover', objectPosition: 'center 10%' }}
+        />
+      </BackgroundImageWrapper>
       <Overlay />
       <MainContent>
         <MainTitle>{weddingConfig.main.title}</MainTitle>
@@ -71,6 +73,16 @@ const MainSectionContainer = styled.section`
     border-radius: 24px; /* 선택사항: 모서리 둥글게 */
     box-shadow: 0 0 32px rgba(0,0,0,0.08); /* 선택사항: 그림자 */
   }
+`;
+
+const BackgroundImageWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
 `;
 
 const BackgroundImage = styled(Image)`
