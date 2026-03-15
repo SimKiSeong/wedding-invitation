@@ -15,7 +15,7 @@ export const weddingConfig = {
   meta: {
     title: "심기성 ❤️ 김민주의 결혼식에 초대합니다",
     description: "결혼식 초대장",
-    ogImage: "/images/gallery/IMG_0133.jpg",
+    ogImage: "/images/gallery/01.JPG",
     noIndex: true,
     _jwk_watermark_id: uniqueIdentifier,
   },
@@ -23,7 +23,7 @@ export const weddingConfig = {
   // 메인 화면
   main: {
     title: "Wedding Invitation",
-    image: "/images/gallery/IMG_0133.jpg",
+    image: "/images/gallery/01.JPG",
     date: "2026년 7월 17일 금요일 12시 00분",
     venue: "소피텔 앰배서더"
   },
