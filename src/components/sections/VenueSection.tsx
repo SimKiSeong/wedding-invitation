@@ -244,10 +244,6 @@ const VenueSection = ({ bgColor = 'white' }: VenueSectionProps) => {
           <TransportLabel>지하철</TransportLabel>
           <TransportText>{weddingConfig.venue.transportation.subway}</TransportText>
         </TransportItem>
-        <TransportItem>
-          <TransportLabel>버스</TransportLabel>
-          <TransportText>{weddingConfig.venue.transportation.bus}</TransportText>
-        </TransportItem>
       </TransportCard>
       
       <ParkingCard>

@@ -13,9 +13,9 @@ interface GalleryConfig {
 export const weddingConfig = {
   // 메타 정보
   meta: {
-    title: "신랑 ❤️ 신부의 결혼식에 초대합니다",
+    title: "심기성 ❤️ 김민주의 결혼식에 초대합니다",
     description: "결혼식 초대장",
-    ogImage: "/images/ha0h-1fsi-bqt3.jpg",
+    ogImage: "/images/gallery/IMG_0133.jpg",
     noIndex: true,
     _jwk_watermark_id: uniqueIdentifier,
   },
@@ -23,9 +23,9 @@ export const weddingConfig = {
   // 메인 화면
   main: {
     title: "Wedding Invitation",
-    image: "/images/ha0h-1fsi-bqt3.jpg",
-    date: "2026년 5월 16일 토요일 12시 30분",
-    venue: "웨딩홀 이름"
+    image: "/images/gallery/IMG_0133.jpg",
+    date: "2026년 7월 17일 금요일 12시 00분",
+    venue: "소피텔 앰배서더"
   },
 
   // 소개글
@@ -37,32 +37,32 @@ export const weddingConfig = {
   // 결혼식 일정
   date: {
     year: 2026,
-    month: 5,
-    day: 16,
+    month: 7,
+    day: 17,
     hour: 12,
-    minute: 30,
-    displayDate: "2026.05.16 SAT PM 12:30",
+    minute: 0,
+    displayDate: "2026.07.17 FRI PM 12:00",
   },
 
   // 장소 정보
   venue: {
-    name: "웨딩홀 이름",
-    address: "서울특별시 강남구 테헤란로 123\n웨딩홀 이름",
-    tel: "02-1234-5678",
-    naverMapId: "웨딩홀 이름", // 네이버 지도 검색용 장소명
+    name: "소피텔 앰배서더",
+    address: "서울 송파구 잠실로 209",
+    tel: "02-2092-6000",
+    naverMapId: "소피텔 앰배서더", // 네이버 지도 검색용 장소명
     coordinates: {
-      latitude: 37.5665,
-      longitude: 126.9780,
+      latitude: 37.5137247,
+      longitude: 127.1061375,
     },
-    placeId: "123456789", // 네이버 지도 장소 ID
-    mapZoom: "17", // 지도 줌 레벨
-    mapNaverCoordinates: "14141300,4507203,15,0,0,0,dh", // 네이버 지도 길찾기 URL용 좌표 파라미터 (구 형식)
+    placeId: "1374313303", // 네이버 지도 장소 ID
+    mapZoom: "16", // 지도 줌 레벨
+    //mapNaverCoordinates: "14141300,4507203,15,0,0,0,dh", // 네이버 지도 길찾기 URL용 좌표 파라미터 (구 형식)
     transportation: {
-      subway: "지하철역 1번 출구에서 도보 5분",
-      bus: "간선\n 101, 102, 103\n지선\n 1234, 5678",
+      subway: "잠실역(2호선, 8호선) 하차 후 도보 200m\n송파나루역(9호선) 하차 후 도보 500m",
     },
-    parking: "건물 지하 주차장 이용 가능 (2시간 무료)",
+    parking: "건물 지하 주차장 이용 가능 (3시간 무료)",
     // 신랑측 배차 안내
+    /*
     groomShuttle: {
       location: "신랑측 배차 출발지",
       departureTime: "오전 10시 30분 출발",
@@ -80,6 +80,7 @@ export const weddingConfig = {
         tel: "010-9876-5432"
       }
     }
+     */
   },
 
   // 갤러리
@@ -103,51 +104,30 @@ export const weddingConfig = {
   invitation: {
     message: "한 줄기 별빛이 되어 만난 인연\n평생을 함께 걸어가려 합니다.\n\n소중한 분들의 축복 속에\n저희 두 사람이 첫 걸음을 내딛습니다.\n\n귀한 시간 내어 함께해 주신다면\n그 어떤 축복보다 값진 선물이 될 것입니다.",
     groom: {
-      name: "신랑이름",
+      name: "심기성",
       label: "아들",
-      father: "신랑아버지",
-      mother: "신랑어머니",
+      father: "심우승",
+      mother: "정광숙",
     },
     bride: {
-      name: "신부이름",
+      name: "김민주",
       label: "딸",
-      father: "신부아버지",
-      mother: "신부어머니",
+      mother: "김현미",
     },
   },
 
   // 계좌번호
   account: {
     groom: {
-      bank: "은행명",
-      number: "123-456-789012",
-      holder: "신랑이름",
+      bank: "카카오뱅크",
+      number: "3333-02-5382831",
+      holder: "심기성",
     },
     bride: {
-      bank: "은행명",
-      number: "987-654-321098",
-      holder: "신부이름",
+      bank: "신한은행",
+      number: "110-383-643527",
+      holder: "김민주",
     },
-    groomFather: {
-      bank: "은행명",
-      number: "111-222-333444",
-      holder: "신랑아버지",
-    },
-    groomMother: {
-      bank: "은행명",
-      number: "555-666-777888",
-      holder: "신랑어머니",
-    },
-    brideFather: {
-      bank: "은행명",
-      number: "999-000-111222",
-      holder: "신부아버지",
-    },
-    brideMother: {
-      bank: "은행명",
-      number: "333-444-555666",
-      holder: "신부어머니",
-    }
   },
 
   // RSVP 설정
