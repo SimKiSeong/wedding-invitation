@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 import { weddingConfig } from '../../config/wedding-config';
@@ -8,8 +8,17 @@ import { weddingConfig } from '../../config/wedding-config';
 const watermarkId = weddingConfig.meta._jwk_watermark_id || 'JWK-NonCommercial';
 
 const MainSection = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // 최초 로드 시 높이를 고정하여 모바일 주소창 변화에 의한 확대 방지
+    if (containerRef.current) {
+      containerRef.current.style.height = `${window.innerHeight}px`;
+    }
+  }, []);
+
   return (
-    <MainSectionContainer className={`wedding-container jwk-${watermarkId.slice(0, 8)}-main`}>
+    <MainSectionContainer ref={containerRef} className={`wedding-container jwk-${watermarkId.slice(0, 8)}-main`}>
       {}
       <BackgroundImage 
         src={weddingConfig.main.image}
