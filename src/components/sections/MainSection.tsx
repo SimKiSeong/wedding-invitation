@@ -52,14 +52,14 @@ const MainSection = () => {
 
 const MainSectionContainer = styled.section`
   position: relative;
-  height: 100dvh;
-  min-height: 100dvh;
-  width: 100vw;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  padding-top: 3.5vh;
+  padding-top: 24px;
   text-align: center;
   color: white;
   overflow: hidden;
@@ -70,8 +70,8 @@ const MainSectionContainer = styled.section`
     max-width: calc(100vh * 9 / 16);
     width: auto;
     margin: 0 auto;
-    border-radius: 24px; /* 선택사항: 모서리 둥글게 */
-    box-shadow: 0 0 32px rgba(0,0,0,0.08); /* 선택사항: 그림자 */
+    border-radius: 24px;
+    box-shadow: 0 0 32px rgba(0,0,0,0.08);
   }
 `;
 
@@ -102,9 +102,9 @@ const Overlay = styled.div`
 const MainContent = styled.div`
   position: relative;
   z-index: 2;
-  margin-top: 0.5vh;
+  margin-top: 4px;
   @media (max-width: 600px) {
-    margin-top: 0.5vh;
+    margin-top: 4px;
     padding-left: 1rem;
     padding-right: 1rem;
   }
