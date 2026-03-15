@@ -40,8 +40,8 @@ const MainSection = () => {
 
 const MainSectionContainer = styled.section`
   position: relative;
-  height: 100vh;
-  min-height: 100vh;
+  height: 100dvh;
+  min-height: 100dvh;
   width: 100vw;
   display: flex;
   flex-direction: column;
