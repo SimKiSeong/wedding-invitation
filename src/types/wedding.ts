@@ -38,7 +38,7 @@ export interface Venue {
   mapNaverCoordinates?: string;
   transportation: {
     subway: string;
-    bus: string;
+    bus?: string;
   };
   parking: string;
   groomShuttle?: ShuttleInfo;

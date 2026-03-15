@@ -81,7 +81,7 @@ export const weddingConfig = {
       }
     }
      */
-  },
+  } as import('../types/wedding').Venue,
 
   // 갤러리
   gallery: {
@@ -112,6 +112,7 @@ export const weddingConfig = {
     bride: {
       name: "김민주",
       label: "딸",
+      father: "",
       mother: "김현미",
     },
   },
