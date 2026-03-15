@@ -14,6 +14,7 @@ const MainSection = () => {
     // 최초 로드 시 높이를 고정하여 모바일 주소창 변화에 의한 확대 방지
     if (containerRef.current) {
       containerRef.current.style.height = `${window.innerHeight}px`;
+      containerRef.current.style.width = `${window.innerWidth}px`;
     }
   }, []);
 
