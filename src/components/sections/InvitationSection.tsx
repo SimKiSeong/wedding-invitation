@@ -52,7 +52,24 @@ const InvitationSection = ({ bgColor = 'white' }: InvitationSectionProps) => {
   return (
     <InvitationSectionContainer $bgColor={bgColor}>
       <InvitationMessage>
-        {invitation.message}
+        {(() => {
+          const paragraphs = invitation.message.split('\n\n');
+          const firstParagraphLines = paragraphs[0].split('\n');
+          const rest = paragraphs.slice(1).join('\n\n');
+          return (
+            <>
+              {firstParagraphLines.map((line, i) => (
+                <React.Fragment key={i}>
+                  {i > 0 && '\n'}
+                  {line.length > 0 ? (
+                    <><Highlight>{line[0]}</Highlight>{line.slice(1)}</>
+                  ) : ''}
+                </React.Fragment>
+              ))}
+              {rest && `\n\n${rest}`}
+            </>
+          );
+        })()}
       </InvitationMessage>
       
       <CoupleContainer>
@@ -128,6 +145,11 @@ const ParentsNames = styled.p`
 const ParentLabel = styled.span`
   font-size: 0.875rem;
   margin-left: 0.25rem;
+`;
+
+const Highlight = styled.span`
+  font-weight: 700;
+  color: #B07A5B;
 `;
 
 const CoupleName = styled.p`
